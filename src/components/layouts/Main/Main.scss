@@ -1,0 +1,145 @@
+@import "src/assets/styles/index.scss";
+
+.main {
+
+  &-header {
+    background: $background;
+    box-shadow: 0px 6px 20px rgba(26, 21, 21, 0.08);
+    padding: 24px 0;
+
+    &__logo {
+      @include font(500, 28px, 28px, $main);
+      text-decoration: none;
+    }
+
+    .container {
+      @include flex(center, space-between);
+    }
+
+    &-right {
+      a {
+        cursor: pointer;
+
+        svg {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  &-body {
+    background: $secondary;
+    min-height: 100vh;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    &-top {
+      @include container;
+
+      h2 {
+        @include font(700, 32px, 38px, $black);
+      }
+    }
+
+    &-content {
+      @include container;
+    }
+
+  }
+
+
+  &-footer {
+    background: $background;
+    box-shadow: 0px 6px 20px rgba(26, 21, 21, 0.08);
+    padding: 24px 0;
+
+    .container {
+      @include flex(center, space-between);
+    }
+
+    &-items {
+      @include flex(start, start);
+      flex-direction: column
+    }
+
+    &__logo {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 28px;
+      color: #2ABDA8;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      @include font(500, 18px, 18px, $gray)
+    }
+
+    &__tel {
+      text-decoration: none;
+      color: #2ABDA8
+    }
+
+    &__about {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        @include font(600, 24px, 18px, $black);
+        margin-bottom: 10px;
+      }
+
+      &-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      &-link {
+        font-size: 16px;
+        text-decoration: none;
+        color: $black;
+
+        &:hover {
+          color: $main
+        }
+      }
+    }
+
+    &__network {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 200px;
+
+      p {
+        @include font(600, 24px, 18px, $black);
+        margin-bottom: 10px;
+      }
+
+      &-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      &-link {
+        font-size: 16px;
+        text-decoration: none;
+        color: $black;
+
+        &:hover {
+          color: $main
+        }
+      }
+    }
+
+
+    &__inner {
+      @include flex(center, space-between);
+
+    }
+  }
+}

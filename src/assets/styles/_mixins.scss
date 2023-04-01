@@ -1,0 +1,29 @@
+@mixin flex($align, $justify) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin font($weight, $size, $height, $color) {
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
+
+@mixin fixHeight($height) {
+  min-height: $height;
+  max-height: $height;
+}
+
+@mixin fixWidth($width) {
+  min-height: $width;
+  max-height: $width;
+}
+@mixin container() {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
