@@ -9,6 +9,7 @@ type ProductItemType = {
 
 const ProductItem: React.FC<ProductItemType> = ({ info }) => {
   const dispatch = useDispatch()
+  
   return (
     <div className="productItem">
       <div className="productItem-img">
