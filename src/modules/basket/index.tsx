@@ -1,7 +1,6 @@
 import { useSelector } from 'react-redux';
 import Main from 'src/components/layouts/Main/Main';
 import { RootState } from 'src/store';
-import { IInitialState } from 'src/store/basket';
 import BasketItem from './components/BasketItem/BasketItem';
 import './styles/main.scss';
 
